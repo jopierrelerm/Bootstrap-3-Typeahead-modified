@@ -22,6 +22,8 @@ After including the script file in your document, you can use the code as follow
 
 Calling it from your client-side code:
 
+
+```
 <script type="text/javascript" language="javascript">
     $(function () {
 
@@ -42,13 +44,14 @@ Calling it from your client-side code:
         });
     });
 </script>
+```
 
 
 Server Side (.NET - although this can be done with any server technology):
 
 A sample of a .NET MVC Controller Action to get your data:
 
-
+```
 [HttpGet]
 public JsonResult LookupCountry(string q, string limit)
 {
@@ -64,3 +67,4 @@ public JsonResult LookupCountry(string q, string limit)
                   
   return Json(tags, JsonRequestBehavior.AllowGet);
 }
+```
