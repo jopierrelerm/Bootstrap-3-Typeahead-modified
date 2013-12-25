@@ -49,6 +49,15 @@ Calling it from your client-side code:
 
 Server Side (.NET - although this can be done with any server technology):
 
+Your result for the "source" get url should return json in the following layout:
+
+```
+[
+    {"ItemValue":57,"ItemText":"United Kingdom"},
+    {"ItemValue":9,"ItemText":"United States"}
+]
+```
+
 A sample of a .NET MVC Controller Action to get your data:
 
 ```
